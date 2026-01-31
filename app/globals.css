@@ -24,3 +24,46 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+:root {
+  --mc-bg: #faf9f7;
+  --mc-card: #ffffff;
+  --mc-text: #1f2937;
+  --mc-muted: #6b7280;
+  --mc-border: #e5e7eb;
+}
+
+html, body {
+  background: var(--mc-bg);
+  color: var(--mc-text);
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.mc-card {
+  background: var(--mc-card);
+  border: 1px solid var(--mc-border);
+  border-radius: 16px;
+}
+
+.mc-btn {
+  border: 1px solid var(--mc-border);
+  background: var(--mc-card);
+  border-radius: 14px;
+  padding: 12px 16px;
+  font-size: 14px;
+}
+
+.mc-btn:hover {
+  filter: brightness(0.98);
+}
+
+.mc-input {
+  border: 1px solid var(--mc-border);
+  background: var(--mc-card);
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-size: 14px;
+  width: 100%;
+}
